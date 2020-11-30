@@ -1,0 +1,28 @@
+def CountMutations (x,y):
+    s=0
+    for i in range(len(x)):
+        if x[i] != y[i]:
+            s=s+1
+    print (s)
+x = ['A','A','A','A']
+y = ['A','A','A','T']
+CountMutations (x,y)
+1
+x = ['A','A','A','A']
+y = ['C','C','C','T']
+CountMutations (x,y)
+4
+x = ['A','A','A','A']
+y = ['A','A','A','A']
+CountMutations (x,y)
+0
+#ввод данных можно еще записать так
+CountMutations (['A','A','A','A'],['A','A','A','T'])
+1
+#или еще так
+CountMutations ("AAAA","AAAT")
+CountMutations ("AAAA","CCCT")
+CountMutations ("AAAA","AAAA")
+1
+4
+0
